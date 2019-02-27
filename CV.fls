@@ -1,0 +1,16 @@
+PWD c:\Users\Ali Yazdi\Documents\GitHub\Resume
+INPUT C:\Users\Ali Yazdi\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\Ali Yazdi\Documents\GitHub\Resume\CV.tex
+OUTPUT c:\Users\Ali Yazdi\Documents\GitHub\Resume\CV.log
+INPUT c:\Users\Ali Yazdi\Documents\GitHub\Resume\res.cls
+INPUT c:\Users\Ali Yazdi\Documents\GitHub\Resume\res.cls
+INPUT C:\Users\Ali Yazdi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Users\Ali Yazdi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Users\Ali Yazdi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT C:\Users\Ali Yazdi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT c:\Users\Ali Yazdi\Documents\GitHub\Resume\CV.aux
+INPUT c:\Users\Ali Yazdi\Documents\GitHub\Resume\CV.aux
+OUTPUT c:\Users\Ali Yazdi\Documents\GitHub\Resume\CV.pdf
+INPUT C:\Users\Ali Yazdi\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT C:\Users\Ali Yazdi\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\Ali Yazdi\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
