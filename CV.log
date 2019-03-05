@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.27)  4 MAR 2019 22:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.27)  5 MAR 2019 06:39
 entering extended mode
 **"c:/Users/Ali Yazdi/Documents/GitHub/Resume/CV.tex"
 ("c:/Users/Ali Yazdi/Documents/GitHub/Resume/CV.tex"
@@ -200,9 +200,9 @@ LaTeX Info: Redefining \nameref on input line 9.
 \everyMPtoPDFconversion=\toks21
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 14.
+(Font)              <7> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 14.
+(Font)              <5> on input line 18.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
  ("C:\Users\Ali Yazdi\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -254,17 +254,17 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 109.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
  ) 
 Here is how much of TeX's memory you used:
- 5440 strings out of 492946
- 80795 string characters out of 3124488
+ 5438 strings out of 492946
+ 80774 string characters out of 3124488
  173370 words of memory out of 3000000
- 9339 multiletter control sequences out of 15000+200000
- 6026 words of font info for 22 fonts, out of 3000000 for 9000
+ 9338 multiletter control sequences out of 15000+200000
+ 5858 words of font info for 21 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,8n,35p,288b,316s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Ali Yazdi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Ali Yazdi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ali Yazdi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ali Yazdi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/Ali Yazdi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ali Yazdi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Ali Yazdi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "c:/Users\Ali Yazdi\Documents\GitHub\Resume\CV.pdf" (1 page, 111052 bytes).
+<C:/Users/Ali Yazdi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Ali Yazdi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ali Yazdi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ali Yazdi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/Ali Yazdi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ali Yazdi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "c:/Users\Ali Yazdi\Documents\GitHub\Resume\CV.pdf" (1 page, 98870 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
+ 48 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
