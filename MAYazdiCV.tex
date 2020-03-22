@@ -3,29 +3,22 @@
 % -*- coding: UTF-8; -*-
 % vim: set fenc=utf-8
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% CV.tex
-%% <https://github.com/zachscrivena/simple-resume-cv>
-%% This is free and unencumbered software released into the
-%% public domain; see <http://unlicense.org> for details.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% See "README.md" for instructions on compiling this document.
-
 \documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
-% Class options:
-% a4paper, letterpaper, nonstopmode, draftmode
-% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
 
 \usepackage{xcolor}
 \usepackage{multicol}
 \usepackage{slantsc}
+\usepackage{ragged2e}
+\usepackage{enumitem}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% PREAMBLE.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% CV Info (to be customized).
+% Multi Cols no justify.
+\AtBeginEnvironment{multicols}{\RaggedRight}
+
+% CV Info.
 \newcommand{\CVAuthor}{Mohammad Ali Arabyazdi}
 \newcommand{\CVTitle}{Mohammad Ali Arabyazdi's CV}
 \newcommand{\CVNote}{Last Update on \today}
@@ -437,7 +430,7 @@ Software Engineering
 {PDF:TechnicalSkills}
 
 \begin{multicols}{2}
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
 \BulletItem
 \textbf{Programming Languages}
 \begin{Detail}
@@ -499,7 +492,7 @@ Microcontroller Programming, Bash Scripting
 {PDF:AcademicProjects}
 
 \begin{multicols}{2}
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
 \BulletItem
 \textbf{Programming Languages},
 \textit{\small{racket}}
