@@ -4,15 +4,13 @@
 % vim: set fenc=utf-8
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% simpleresumecv.cls
-%% <https://github.com/zachscrivena/simple-resume-cv>
-%% This is free and unencumbered software released into the
-%% public domain; see <http://unlicense.org> for details.
+%% resume.cls
+%% <https://github.com/aliyazdi75/Resume>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesClass{simpleresumecv}[2016/12/25 Simple Resume CV https://github.com/zachscrivena/simple-resume-cv]
+\ProvidesClass{resume}[Simple Resume CV https://github.com/aliyazdi75/Resume]
 
 \DeclareOption{a4paper}{\PassOptionsToClass{\CurrentOption}{article}}
 \DeclareOption{letterpaper}{\PassOptionsToClass{\CurrentOption}{article}}
