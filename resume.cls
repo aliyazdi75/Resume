@@ -10,7 +10,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesClass{resume}[Simple Resume CV https://github.com/aliyazdi75/Resume]
+\ProvidesClass{resume}[2020/10/25 Resume https://github.com/aliyazdi75/Resume]
 
 \DeclareOption{a4paper}{\PassOptionsToClass{\CurrentOption}{article}}
 \DeclareOption{letterpaper}{\PassOptionsToClass{\CurrentOption}{article}}
