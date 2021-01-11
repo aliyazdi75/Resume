@@ -15,6 +15,7 @@
 \usepackage{slantsc}
 \usepackage{ragged2e}
 \usepackage{enumitem}
+\usepackage{fontawesome5}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% PREAMBLE.
@@ -24,8 +25,8 @@
 \AtBeginEnvironment{multicols}{\RaggedRight}
 
 % CV Info.
-\newcommand{\CVAuthor}{Mohammad Ali Arabyazdi}
-\newcommand{\CVTitle}{Mohammad Ali Arabyazdi's CV}
+\newcommand{\CVAuthor}{Ali Yazdi}
+\newcommand{\CVTitle}{Ali Yazdi's CV}
 \newcommand{\CVNote}{Last Update on \today}
 \newcommand{\CVWebpage}{https://aliyazdi75.github.io}
 
@@ -53,6 +54,11 @@ urlcolor=teal
 \newcommand{\Code}[1]{\mbox{\textbf{#1}}}
 \newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
 
+\newcommand\pscircled[1]{%
+\raisebox{-0.315\height}{\begin{postscript}
+\Cnodeput[radius=2.3ex](0,0){P}{#1}
+\end{postscript}}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% ACTUAL DOCUMENT.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,6 +72,27 @@ urlcolor=teal
 \Title{\CVAuthor}
 
 \begin{SubTitle}
+\href{https://www.linkedin.com/in/aliyazdi75}
+{\faLinkedin}
+\,\SubBulletSymbol\,
+\href{https://github.com/aliyazdi75}
+{\faGithub}
+\,\SubBulletSymbol\,
+\href{https://twitter.com/aliyazdi75}
+{\faTwitter}
+\,\SubBulletSymbol\,
+\href{https://join.skype.com/invite/h3jUqpJH9jLh}
+{\faSkype}
+\,\SubBulletSymbol\,
+\href{mailto:ma.yazdi75@gmail.com}
+{\faEnvelope}
+\,\SubBulletSymbol\,
+\href{tel:+989120371375}
+{\faPhone}
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\faGlobe}
+\par
 Dept. Computer Engineering Amirkabir University, Hafez Ave., Tehran, Iran
 \par
 \href{mailto:ma.yazdi75@gmail.com}
@@ -84,6 +111,66 @@ Dept. Computer Engineering Amirkabir University, Hafez Ave., Tehran, Iran
 \smallskip\hrule
 
 \begin{Body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ABOUT ME %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\Section
+{About Me}
+{About Me}
+{PDF:AboutMe}
+
+I have been working as a Flutter developer and mobile team leader for two years.
+I am a CS graduate who interests in using Artificial Intelligence and Software Engineering in my work.
+I am an open-source advocate who helps developers to solve their problems in development.
+I am finding a better opportunity and willing to relocate to the new country.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Work\newline
+Experience}
+{Work Experience}
+{PDF:WorkExperience}
+
+\Entry
+\href{https://matemachine.com}
+{\textbf{Mate Machine Inc.}},
+\small{North Vancouver, British Columbia, Canada - }\textit{\small{Remote}}
+\hfill
+\textsl{\small{\DatestampYM{2020}{06} -- Present}}
+\Gap
+\small{\textit{Flutter}}
+
+\BulletItem
+Preparing the Flutter application for the first launch.
+
+\BigGap
+\Entry
+\href{https://tarafdari.com}
+{\textbf{Tarafdari}},
+\small{Tehran, Iran}
+\hfill
+\textsl{\small{\DatestampYM{2019}{03} -- \DatestampYM{2020}{05}}}
+\Gap
+\small{\textit{Flutter, Drupal, Laravel, MySQL}}
+
+\BulletItem
+Working as mobile application team leader at one of the most popular sport social media.
+\begin{Detail}
+\SubBulletItem
+Developing requirement APIs.
+\SubBulletItem
+R\&D about Flutter framework and migrating the android application to Flutter
+\href{https://play.google.com/store/apps/details?id=com.tarafdari.news}
+{application}
+that is including multimedia content,
+live score matches, sports TV streaming with live chat on the socket.
+\end{Detail}
 
 %%%%%%%%%%%%%%%
 %% EDUCATION %%
@@ -109,19 +196,12 @@ Bachelor of Engineering in
 \begin{Detail}
 \SubBulletItem
 Thesis:
-\href{}
-{Designing and Implementing Location Based Social Network
-Recommendation System}
+Designing and Implementing Location Based Social Network
+Recommendation System
 \SubBulletItem
 Adviser:
 \href{https://aut.ac.ir/cv/2416/Mohammad-Rahmati?slc_lang=en&&cv=2416&mod=scv}
 {Prof.~Mohammad~Rahmati}
-\SubBulletItem
-Focus:
-Artificial Intelligence, Software Engineering, Data Analytics.
-\SubBulletItem
-Technologies:
-Django, Django Rest Framework, Tensorflow, Flutter
 \end{Detail}
 
 \BigGap
@@ -140,93 +220,118 @@ Diploma in Mathematics and Physics
 GPA: 19.31 / 20.00
 \end{Detail}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%% RESEARCH EXPERIENCE %%
-%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \Section
-% {Research Experience}
-% {Research Experience}
-% {PDF:ResearchExperience}
-
-% \Entry
-% \href{http://www.example.com/my-institute}
-% {\textbf{Institute for Advanced Research}},
-% Science College
-
-% \Gap
-% \BulletItem
-% Undergraduate Research Student, Science Department
-% \hfill
-% \DatestampYMD{2004}{05}{15} --
-% \DatestampYMD{2005}{05}{15}
-% \begin{Detail}
-% \SubBulletItem
-% Project:
-% Investigations on the Use of Lasers to Measure Climate Change
-% \SubBulletItem
-% Supervisors:
-% Prof.~Jane~Citizen and
-% Dr~Ann~Yone
-% \SubBulletItem
-% Focus:
-% Climate change, lasers, statistical analysis, data analytics.
-% \end{Detail}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% WORK EXPERIENCE %%
+%% Honors & Awards %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \Section
-{Work\newline
-Experience}
-{Work Experience}
-{PDF:WorkExperience}
-
-\Entry
-\href{https://matemachine.com}
-{\textbf{Mate Machine Inc.}},
-\small{North Vancouver, British Columbia, Canada - }\textit{\small{Remote}}
-\hfill
-\textsl{\small{\DatestampYM{2020}{07} -- Present}}
-\Gap
-\small{\textit{Flutter}}
+{Honors \&\newline
+Awards}
+{Honors \& Awards}
+{PDF:HonorsAndAwards}
 
 \BulletItem
-Preparing the Flutter application for the first launch.
-
-\BigGap
-\Entry
-\href{https://tarafdari.com}
-{\textbf{Tarafdari}},
-\small{Tehran, Iran}
+First Place in the 12th Iran Web and Mobile Festival
+(\href{https://iwmf.ir}
+{\small{IWMF}}) 
 \hfill
-\textsl{\small{\DatestampYM{2019}{06} -- \DatestampYM{2020}{04}}}
-\Gap
-\small{\textit{Flutter, Drupal, Laravel, MySQL}}
-
-\BulletItem
-Tarafdari is the first and most popular sports social media network
-in Iran, providing official news and live scores of national and international matches.
+\textsl{\small{\DatestampYM{2020}{02}}}
 \begin{Detail}
-\SubBulletItem
-Developing requirement APIs
-\SubBulletItem
-R\&D about Flutter framework and Developing Tarafdari's client
+\Item
+For the Best Sport Mobile Application among 7k applications
+\end{Detail}
+
+\Gap
+\BulletItem
+Most installed sport application in Iran
+\hfill
+\textsl{\small{\DatestampYM{2020}{05}}}
+\begin{Detail}
+\Item
+In my first job, we could reach more than 200k active users on the
 \href{https://play.google.com/store/apps/details?id=com.tarafdari.news}
-{application}
-and requirement plugins in Flutter, that is including multimedia content,
-live score matches, sports TV streaming with live chat on the socket
+{Google Play Store} after migrating to the flutter
+\end{Detail}
+
+\Gap
+\BulletItem
+Ranked in top 0.2\% among more than 180K participants
+\hfill
+\textsl{\small{\DatestampYM{2015}{07}}}
+\begin{Detail}
+\Item
+In Nation-Wide University Entrance Exam among
+all Iranian Student of Physics and Mathematics
+\end{Detail}
+
+\Gap
+\BulletItem
+Qualified for the Second Round of Olympiad
+among more than 70K participants
+\hfill
+\textsl{\small{\DatestampYM{2013}{07}}}
+\begin{Detail}
+\Item
+In the Iranian Physics Olympiad and Mathematical Olympiad
 \end{Detail}
 
 %%%%%%%%%%%%%%%%%%
 %% PUBLICATIONS %%
 %%%%%%%%%%%%%%%%%%
 
-% \Section
-% {Publications}
-% {Publications}
-% {PDF:Publications}
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+\SubSection
+{Medium}
+{Medium}
+{PDF:Medium}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+\begingroup
+\renewcommand{\MaxNumberedItem}{[88]}
+
+\NumberedItem{[1]}
+\href{https://medium.com/@aliyazdi75}
+{\underline{A. Yazdi}},
+\href{https://medium.com/@aliyazdi75/efcdc8a8fc26?source=friends_link&sk=ceb60f56685ce66c7f9574595748f25b}
+{
+``The Software Engineering approach in Cross-Platform Programming  with Flutter (part 1)''
+},
+\newline Using Software Engineering methods to design and build a fully responsive and adaptive mobile, desktop, and web application,
+\href{https://medium.com/flutter-community}
+{\textit{Flutter Community}},
+\DatestampYM{2021}{01}.
+
+\Gap
+\NumberedItem{[2]}
+\href{https://medium.com/@aliyazdi75}
+{\underline{A. Yazdi}},
+\href{https://medium.com/@aliyazdi75/f7b75056102?source=friends_link&sk=79ed6a47bd6fe9b4247f3cc2a113e3df}
+{
+``The Software Engineering approach in Cross-Platform Programming  with Flutter (part 2)''
+},
+\newline Designing and building the Flutter application structure using the Bloc pattern in the micro-service architecture,
+\href{https://medium.com/flutter-community}
+{\textit{Flutter Community}},
+\DatestampYM{2021}{01}.
+
+\Gap
+\NumberedItem{[3]}
+\href{https://medium.com/@aliyazdi75}
+{\underline{A. Yazdi}},
+\href{https://medium.com/@aliyazdi75/34c6eff02af0?source=friends_link&sk=a34a4a71f306e81b868fd6865abb6aaa}
+{
+``The Software Engineering approach in Cross-Platform Programming  with Flutter (part 3)''
+},
+\newline Designing and building the Flutter application data models and backend using the Build value and Bloc pattern,
+\href{https://medium.com/flutter-community}
+{\textit{Flutter Community}},
+\DatestampYM{2021}{01}.
+
+\endgroup
 
 % \SubSection
 % {Journals}
@@ -269,10 +374,10 @@ live score matches, sports TV streaming with live chat on the socket
 
 % % Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
 % \begingroup
-% \renewcommand{\MaxNumberedItem}{[8888]}
+% \renewcommand{\MaxNumberedItem}{[888]}
 
 % \BigGap
-% \NumberedItem{[1000]}
+% \NumberedItem{[1]}
 % \href{http://www.example.com/my-paper-doi-3}
 % {\underline{J.~Doe}, J.~Citizen, and A.~Yone,
 % ``On lasers and climate change,''
@@ -281,7 +386,7 @@ live score matches, sports TV streaming with live chat on the socket
 % \DatestampYM{2007}{01}.}
 
 % \Gap
-% \NumberedItem{[100]}
+% \NumberedItem{[2]}
 % \href{http://www.example.com/my-paper-doi-2}
 % {A.~Yone and \underline{J.~Doe},
 % ``Climate change and general relativity,''
@@ -290,7 +395,7 @@ live score matches, sports TV streaming with live chat on the socket
 % \DatestampYM{2006}{8}.}
 
 % \Gap
-% \NumberedItem{[10]}
+% \NumberedItem{[3]}
 % \href{http://www.example.com/my-paper-doi-1}
 % {\underline{J.~Doe} and J.~Citizen,
 % ``Measuring the extent of climate change,''
@@ -300,74 +405,58 @@ live score matches, sports TV streaming with live chat on the socket
 
 % \endgroup
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Honors & Awards %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\Section
-{Honors \&\newline
-Awards}
-{Honors \& Awards}
-{PDF:HonorsAndAwards}
-
-\BulletItem
-First Place in the 12th Iran Web and Mobile Festival
-(\href{https://iwmf.ir}
-{\small{IWMF}}) 
-\hfill
-\textsl{\small{\DatestampYM{2020}{02}}}
-\begin{Detail}
-\Item
-For the Best Sport Mobile Application among 7k applications
-\end{Detail}
-
-\Gap
-\BulletItem
-Ranked in top 0.2\% among more than 180K participants
-\hfill
-\textsl{\small{\DatestampYM{2015}{07}}}
-\begin{Detail}
-\Item
-In Nation-Wide University Entrance Exam among
-all Iranian Student of Physics and Mathematics
-\end{Detail}
-
-\Gap
-\BulletItem
-Qualified for the Second Round of Olympiad
-among more than 70K participants
-\hfill
-\textsl{\small{\DatestampYM{2013}{07}}}
-\begin{Detail}
-\Item
-In the Iranian Physics Olympiad and Mathematical Olympiad
-\end{Detail}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% PROFESSIONAL AFFILIATIONS & ACTIVITIES %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \Section
-% {Professional Affiliations\newline
-% \& Activities}
-% {Professional Affiliations \& Activities}
-% {PDF:ProfessionalAffiliationsActivities}
+\Section
+{Professional\newline
+Projects}
+{Professional Projects}
+{PDF:ProfessionalProjects}
 
-% \Entry
-% \href{http://www.example.com/my-society}
-% {\textbf{Joint Society of Earth Scientists and Global Think Tank on Climate Resiliency}},
-% \newline
-% North Attleborough, Massachusetts, USA
+\BigGap
+\BulletItem
+\href{https://github.com/aliyazdi75/aliyazdi75.github.io}
+{\textbf{The Flutter Protfolio Application}},
+\textit{\small{Flutter}}
+\begin{Detail}
+\Item
+Designing and Building a responsive Flutter gallery application for any platform.
+\end{Detail}
 
-% \Gap
-% \BulletItem
-% Member
-% \hfill
-% \DatestampY{2009} --
-% Present
+\BigGap
+\BulletItem
+\href{https://github.com/aliyazdi75/gallery}
+{\textbf{The Flutter Gallery Application}},
+\textit{\small{Flutter}}
+\begin{Detail}
+\Item
+Designing and Building a responsive Flutter gallery application for any platform using micro-service architecture.
+\end{Detail}
 
-% % Manual page break.
-% \newpage
+\BigGap
+\BulletItem
+\href{https://github.com/aliyazdi75/flutter_media_notification}
+{\textbf{The Flutter Media Notification Plugin}},
+\textit{\small{Java, Flutter}}
+\begin{Detail}
+\Item
+Designing and Building a Flutter Plugin that helps developers to show their media notification and control streaming media beyond their Flutter application.
+\end{Detail}
+
+\BigGap
+\BulletItem
+\href{https://github.com/aliyazdi75/resume/BScThesis-Abstract.pdf}
+{\textbf{The Location-Based Recommendation System}},
+\textit{\small{Django, Django Rest Framework, Scikit-learn, Flutter}}
+\begin{Detail}
+\Item
+Designing and Implementing Location Based Social Network Recommendation System with Djando and Flutter.
+\end{Detail}
+
+% Manual page break.
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% CAMPUS ACTIVITIES %%
@@ -404,9 +493,6 @@ In the Iranian Physics Olympiad and Mathematical Olympiad
 % Suspendisse volutpat sapien et mi cursus, gravida ornare mauris sollicitudin.
 % \end{Detail}
 
-\begin{multicols}{2}
-\begin{itemize}[leftmargin=*]
-
 %%%%%%%%%%%%%%%
 %% INTERESTS %%
 %%%%%%%%%%%%%%%
@@ -416,16 +502,48 @@ In the Iranian Physics Olympiad and Mathematical Olympiad
 {Research Interests}
 {PDF:ResearchInterests}
 
+\BigGap
 \BulletItem
 Artificial Intelligence
 
+\Gap
 \BulletItem
 Machine Learning
 
+\Gap
 \BulletItem
 Software Engineering
 
-\columnbreak
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\Entry
+Artificial Intelligent and Robotics Lab,
+\href{https://aut.ac.ir}
+{\textbf{Amirkabir University of Technology}},
+\hfill
+\textsl{\small{\DatestampYM{2019}{10} -- \DatestampYM{2020}{10}}}
+
+\Gap
+\BulletItem
+Undergraduate Research Student, Science Department
+\begin{Detail}
+\SubBulletItem
+Project:
+Designing and Implementing Location Based Social Network Recommendation System
+\SubBulletItem
+Supervisors:
+\href{https://aut.ac.ir/cv/2416/Mohammad-Rahmati?slc_lang=en&&cv=2416&mod=scv}
+{Prof.~Mohammad~Rahmati}
+\SubBulletItem
+Focus: Artificial Intelligence, Software Engineering, Data Analytics
+\end{Detail}
 
 %%%%%%%%%%%%%%%
 %% LANGUAGES %%
@@ -436,14 +554,13 @@ Software Engineering
 {Languages}
 {PDF:Languages}
 
+\BigGap
 \BulletItem
 Persian: Native language
 
+\Gap
 \BulletItem
 English: Fluent, working proficiency
-
-\end{itemize}
-\end{multicols}
 
 %%%%%%%%%%%%
 %% TECHNICAL SKILLS %%
@@ -454,8 +571,9 @@ English: Fluent, working proficiency
 {Technical Skills}
 {PDF:TechnicalSkills}
 
-\begin{multicols}{2}
-\begin{itemize}[leftmargin=*]
+% \begin{multicols}{2}
+% \begin{itemize}[leftmargin=*]
+\BigGap
 \BulletItem
 \textbf{Programming Languages}
 \begin{Detail}
@@ -463,6 +581,7 @@ English: Fluent, working proficiency
 Dart, Python, Java, C/C++, PHP, Assembly
 \end{Detail}
 
+\Gap
 \BulletItem
 \textbf{Mobile Development}
 \begin{Detail}
@@ -470,6 +589,7 @@ Dart, Python, Java, C/C++, PHP, Assembly
 Flutter, Android
 \end{Detail}
 
+\Gap
 \BulletItem
 \textbf{Database Systems}
 \begin{Detail}
@@ -477,8 +597,9 @@ Flutter, Android
 PostgreSQL, MySQL
 \end{Detail}
 
-\columnbreak
+% \columnbreak
 
+\Gap
 \BulletItem
 \textbf{Operating System}
 \begin{Detail}
@@ -486,6 +607,7 @@ PostgreSQL, MySQL
 Linux (Ubuntu)
 \end{Detail}
 
+\Gap
 \BulletItem
 \textbf{Web Development}
 \begin{Detail}
@@ -493,6 +615,7 @@ Linux (Ubuntu)
 Django , Django Rest Framework
 \end{Detail}
 
+\Gap
 \BulletItem
 \textbf{Other}
 \begin{Detail}
@@ -500,8 +623,8 @@ Django , Django Rest Framework
 Microcontroller Programming, Bash Scripting
 \end{Detail}
 
-\end{itemize}
-\end{multicols}
+% \end{itemize}
+% \end{multicols}
 
 %%%%%%%%%%%%
 %% Academic Projects %%
@@ -512,8 +635,9 @@ Microcontroller Programming, Bash Scripting
 {Academic Projects}
 {PDF:AcademicProjects}
 
-\begin{multicols}{2}
-\begin{itemize}[leftmargin=*]
+% \begin{multicols}{2}
+% \begin{itemize}[leftmargin=*]
+\BigGap
 \BulletItem
 \textbf{Programming Languages},
 \textit{\small{racket}}
@@ -525,6 +649,7 @@ Designing a simple interpreter
 NUMEX programming language with Racket.
 \end{Detail}
 
+\BigGap
 \BulletItem
 \textbf{Information Security},
 \textit{\small{python}}
@@ -537,6 +662,7 @@ working with cryptool software nmap
 and using ms08\_067 exploitand.
 \end{Detail}
 
+\BigGap
 \BulletItem
 \textbf{Computer Networks},
 \textit{\small{python}}
@@ -548,8 +674,9 @@ A python proxy that receives HTTP packets on UDP
 then sends them on TCP with DNS server.
 \end{Detail}
 
-\columnbreak
+% \columnbreak
 
+\BigGap
 \BulletItem
 \textbf{Microprocessor \& Assembly Language},
 \textit{\small{C}}
@@ -561,6 +688,7 @@ A digital watch with LCD and
 alarm using microcontroller ATMEGA16.
 \end{Detail}
 
+\BigGap
 \BulletItem
 \textbf{Data Structure \& Algorithms},
 \textit{\small{Java}}
@@ -572,6 +700,7 @@ Creating four types of data structure and searching using
 AVL-tree, balance-TST, trie-tree and hash.
 \end{Detail}
 
+\BigGap
 \BulletItem
 \textbf{Advanced Computer Programmings},
 \textit{\small{Java}}
@@ -583,8 +712,8 @@ A 2d game similar to Plant vs Zombies game
 using java object oriented programming.
 \end{Detail}
 
-\end{itemize}
-\end{multicols}
+% \end{itemize}
+% \end{multicols}
 
 %%%%%%%%%%%%%%%%
 %% REFERENCES %%
@@ -629,6 +758,7 @@ using java object oriented programming.
 %%%%%%%%%%%
 
 \UseNoteFont
+\BigGap
 \hfill[\textit{\CVNote}]
 
 \end{Body}
