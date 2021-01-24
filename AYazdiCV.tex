@@ -1,0 +1,797 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% cv.tex
+%% <https://github.com/aliyazdi75/Resume>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{resume}
+
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{slantsc}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Multi Cols no justify.
+\AtBeginEnvironment{multicols}{\RaggedRight}
+
+% CV Info.
+\newcommand{\CVAuthor}{Ali Yazdi}
+\newcommand{\CVTitle}{Ali Yazdi's CV}
+\newcommand{\CVNote}{Last Update on \today}
+\newcommand{\CVWebpageName}{aliyazdi.tech}
+\newcommand{\CVWebpage}{https://aliyazdi.tech}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={aliyazdi75},
+pdfproducer={aliyazdi75},
+pdfkeywords={cv, aliyazdi75},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks,
+colorlinks, 
+urlcolor=teal
+}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+\newcommand\pscircled[1]{%
+\raisebox{-0.315\height}{\begin{postscript}
+\Cnodeput[radius=2.3ex](0,0){P}{#1}
+\end{postscript}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\normalsize{
+\href{https://t.me/aliyazdi75}
+{\faTelegram}
+\,\textbullet\,
+\href{https://www.instagram.com/aliyazdi75}
+{\faInstagram}
+\,\textbullet\,
+\href{https://join.skype.com/invite/h3jUqpJH9jLh}
+{\faSkype}
+\,\textbullet\,
+\href{https://twitter.com/aliyazdi75}
+{\faTwitter}
+\,\textbullet\,
+\href{https://www.linkedin.com/in/aliyazdi75}
+{\faLinkedin}
+\,\textbullet\,
+\href{https://github.com/aliyazdi75}
+{\faGithub}
+\,\textbullet\,
+\href{https://medium.com/@aliyazdi75}
+{\faMedium}
+\,\textbullet\,
+\href{mailto:ma.yazdi75@gmail.com}
+{\faEnvelope}
+\,\textbullet\,
+\href{tel:+989120371375}
+{\faPhone}
+\,\textbullet\,
+\href{\CVWebpage}
+{\faGlobe}
+}
+\par
+Dept. Computer Engineering Amirkabir University, Hafez Ave., Tehran, Iran
+\par
+\href{mailto:ma.yazdi75@gmail.com}
+{ma.yazdi75@gmail.com}
+\,\SubBulletSymbol\,
+\href{mailto:ma.yazdi75@aut.ac.ir}
+{ma.yazdi75@aut.ac.ir}
+\,\SubBulletSymbol\,
+\href{tel:+989120371375}
+{+98\,(912)\,037-1375}
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\CVWebpageName}
+\end{SubTitle}
+
+\smallskip\hrule
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ABOUT ME %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\Section
+{About Me}
+{About Me}
+{PDF:AboutMe}
+
+I have been working as a Flutter developer and mobile team leader for two years.
+A Software Engineering graduate who interests in using Artificial Intelligence and Software Engineering in my work experiences.
+An open-source advocate who helps developers to solve their problems in development.
+I am looking for a better opportunity and willing to relocate anywhere.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Work\newline
+Experience}
+{Work Experience}
+{PDF:WorkExperience}
+
+\Entry
+\href{https://matemachine.com}
+{\textbf{Mate Machine Inc.}},
+{\small{Vancouver, Canada - \textit{Remote}}}
+\hfill
+\textsl{\small\DatestampYM{2020}{06}\,--\,Present}
+\Gap
+Flutter Developer
+\BulletItem
+Mate Machine is a dating social media startup company that currently is in stealth mode.
+\begin{Detail}
+\SubBulletItem
+R\&D about Flutter's best architecture design for the current requirements.
+\SubBulletItem
+Implementing SignalR socket client and full-featured social media chat.
+\SubBulletItem
+Handling unique Firebase notifications for each user.
+\SubBulletItem
+Supporting other Firebase distribution plugins like Analytics and Crashlytics.
+\SubBulletItem
+Implementing P2P WebRTC video chatting.
+\end{Detail}
+
+\BigGap
+\Entry
+\href{https://tarafdari.com}
+{\textbf{Tarafdari}},
+{\small{Tehran, Iran}}
+\hfill
+\textsl{\small{\DatestampYM{2019}{03}\,--\,\DatestampYM{2020}{05}}}
+\Gap
+Mobile Application Developer
+\normalsize{
+\SubBulletSymbol\,
+\href{https://play.google.com/store/apps/details?id=com.tarafdari.news}
+{\faGooglePlay}}
+\BulletItem
+Tarafdari is the first and most popular sports social media network with millions of users in Iran, providing official news and live scores
+of national and international matches.
+\begin{Detail}
+\SubBulletItem
+R\&D about Flutter framework as the migrating framework for the android application.
+\SubBulletItem
+Developing requirement APIs for the application in Drupal.
+\SubBulletItem
+Implementing the requirement plugin for the application media notification.
+\SubBulletItem
+Adding features like downloadable multimedia content, live score matches, and social media profiles.
+\SubBulletItem
+Implementing TV Sports matches streaming with Live Chat on the SocketIO.
+\SubBulletItem
+Supporting Firebase distribution plugins like Notifications, Analytics, and Crashlytics.
+\SubBulletItem
+Reaching more than 200k active users with less than 0.3\% crashes on the Google Play Store and the local stores.
+\end{Detail}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{https://aut.ac.ir/en}
+{\textbf{Amirkabir University of Technology}},
+{\small{(Tehran Polytechnic), Tehran, Iran}}
+\hfill
+\textsl{\small{\DatestampYM{2015}{09}\,--\,\DatestampYM{2020}{01}}}
+
+\Gap
+\BulletItem
+Bachelor of Engineering (BSc.) in
+\href{https://ce.aut.ac.ir/en}
+{Computer Engineering, Software},
+\href{https://ur.isc.ac/#Technology?input_culture=en}
+{Ranked 1st}
+in Iran.
+\begin{Detail}
+\SubBulletItem
+Thesis:
+Designing and Implementing Location Based Social Network
+Recommendation System
+\SubBulletItem
+Adviser:
+Prof.~Mohammad~Rahmati
+\end{Detail}
+
+\BigGap
+\Entry
+\href{http://adab.sch.ir/HSchool}
+{\textbf{Adab High School}}.
+{\small{Tehran, Iran}}
+\hfill
+\textsl{\small{\DatestampYM{2011}{09}\,--\,\DatestampYM{2014}{06}}}
+\Gap
+\BulletItem
+Diploma in Mathematics and Physics, {\small{\textsl{GPA: 19.31 / 20.00}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Honors & Awards %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Honors \&\newline
+Awards}
+{Honors \& Awards}
+{PDF:HonorsAndAwards}
+
+\BulletItem
+Most installed sport application in Iran for Tarafdari application
+\hfill
+\textsl{\small{\DatestampYM{2020}{05}}}
+\begin{Detail}
+\SubBulletItem
+We could reach more than 200k active users on the
+Google Play Store after migrating to Flutter.
+\end{Detail}
+
+\Gap
+\BulletItem
+First Place in the 12th Iran Web and Mobile Festival
+(\href{https://iwmf.ir}
+{\small{IWMF}})
+\hfill
+\textsl{\small{\DatestampYM{2020}{02}}}
+\begin{Detail}
+\SubBulletItem
+For the Best Sport Mobile Application among 7k applications.
+\end{Detail}
+
+\Gap
+\BulletItem
+Ranked in top 0.2\% among more than 180K participants
+\hfill
+\textsl{\small{\DatestampYM{2015}{07}}}
+\begin{Detail}
+\SubBulletItem
+In Nation-Wide University Entrance Exam among
+all Iranian Student of Physics and Mathematics.
+\end{Detail}
+
+\Gap
+\BulletItem
+Qualified for the Second Round of Olympiad
+among more than 70K participants
+\hfill
+\textsl{\small{\DatestampYM{2013}{07}}}
+\begin{Detail}
+\SubBulletItem
+In the Iranian Physics Olympiad and Mathematical Olympiad.
+\end{Detail}
+
+%%%%%%%%%%%%
+%% TECHNICAL SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Technical Skills}
+{Technical Skills}
+{PDF:TechnicalSkills}
+
+% \begin{multicols}{2}
+% \begin{itemize}[leftmargin=*]
+\BulletItem
+Programming Languages
+\SubBulletItem
+\textbf{Dart, Python, Java}, C/C++, PHP, Assembly
+
+\Gap
+\BulletItem
+Mobile \& Web Development
+\SubBulletItem
+\textbf{Flutter, Django, Django Rest Framework}, Android
+
+% \columnbreak
+
+\Gap
+\BulletItem
+Database \& Operating Systems
+\SubBulletItem
+\textbf{Linux (Ubuntu), PostgreSQL}, MySQL
+
+\Gap
+\BulletItem
+Tools \& Technologies
+\SubBulletItem
+\textbf{Docker, Git, \LaTeX}, WebRTC, Scikit-­learn, Pandas, Microcontroller Programming, Bash Scripting
+
+\Gap
+\BulletItem
+Other
+\SubBulletItem
+\textbf{Software Systems Engineering, Cross-Platform Application Development}
+
+% \end{itemize}
+% \end{multicols}
+
+%%%%%%%%%%%%%%%%%%
+%% PAGE BREAK %%
+%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+\SubSection
+{Medium}
+{Medium}
+{PDF:Medium}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+\begingroup
+\renewcommand{\MaxNumberedItem}{[88]}
+
+\NumberedItem{[1]}
+\href{https://medium.com/@aliyazdi75}
+{\underline{A. Yazdi}},
+\href{https://medium.com/flutter-community/the-software-engineering-approach-in-cross-platform-programming-with-flutter-part-1-efcdc8a8fc26}
+{
+``Using Software Engineering methods to design and build a fully responsive and adaptive mobile, desktop, and web application''
+},
+\newline The first part of the series of the Software Engineering approach in Cross-Platform Programming with Flutter,
+\href{https://medium.com/flutter-community}
+{\textit{Flutter Community}},
+\DatestampYM{2021}{01}.
+
+\BigGap
+\NumberedItem{[2]}
+\href{https://medium.com/@aliyazdi75}
+{\underline{A. Yazdi}},
+\href{https://medium.com/flutter-community/the-software-engineering-approach-in-cross-platform-programming-with-flutter-part-2-f7b75056102}
+{
+``Designing and building the Flutter application structure using the Bloc pattern in the micro-service architecture''
+},
+\newline The second part of the series of the Software Engineering approach in Cross-Platform Programming with Flutter,
+\href{https://medium.com/flutter-community}
+{\textit{Flutter Community}},
+\DatestampYM{2021}{01}.
+
+\BigGap
+\NumberedItem{[3]}
+\href{https://medium.com/@aliyazdi75}
+{\underline{A. Yazdi}},
+\href{https://medium.com/flutter-community/the-software-engineering-approach-in-cross-platform-programming-with-flutter-part-3-34c6eff02af0}
+{
+``Designing and building the Flutter application data models and backend using the Build value and Bloc pattern''
+},
+\newline The third part of the series of the Software Engineering approach in Cross-Platform Programming with Flutter,
+\href{https://medium.com/flutter-community}
+{\textit{Flutter Community}},
+\DatestampYM{2021}{01}.
+
+\endgroup
+
+% \SubSection
+% {Journals}
+% {Journals}
+% {PDF:Journals}
+
+% \BigGap
+% \SubSection
+% {Conferences}
+% {Conferences}
+% {PDF:Conferences}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROFESSIONAL AFFILIATIONS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Professional\newline
+Projects}
+{Professional Projects}
+{PDF:ProfessionalProjects}
+
+\BulletItem
+\textbf{The Location-Based Recommendation System},
+\textit{\small{Django, Rest Framework, Scikit-learn, Flutter}}
+\hfill
+{\normalsize{
+\href{https://github.com/aliyazdi75/Resume/raw/master/BScThesis-Abstract.pdf}
+{\faFilePdf}
+}}
+\Item
+A micro­service recommendation system recommends by the mixture of content­-based and collaboration recommendation algorithms based on user location­-based social media networks like Foursquare and Google Map. The services include:
+\SubBulletItem
+\href{https://www.django-rest-framework.org}{Django Rest Framework} API service.
+\SubBulletItem
+\href{https://developer.foursquare.com}{Foursquare API} connection service.
+\SubBulletItem
+\href{https://osm-internal.download.geofabrik.de}{Open Street Map} location datasets scrapping service.
+\SubBulletItem
+Recommendation service.
+\SubBulletItem
+Flutter application service using Google Map to show recommendation spots.
+
+\BigGap
+\BulletItem
+\textbf{The Flutter Portfolio Application},
+\textit{\small{Flutter}}
+\hfill
+{\normalsize{
+\href{https://snapcraft.io/aliyazdi75}
+{\faLinux}
+\,\SubBulletSymbol\,
+\href{https://github.com/aliyazdi75/aliyazdi75.github.io/releases}
+{\faAndroid}
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\faGlobe}
+\,\SubBulletSymbol\,
+\href{https://github.com/aliyazdi75/aliyazdi75.github.io}
+{\faGithub}
+}}
+\Item
+Designing and Building a responsive Flutter gallery application for any platform.
+
+\BigGap
+\BulletItem
+\textbf{The Flutter Gallery Application},
+\textit{\small{Flutter}}
+\hfill
+{\normalsize{
+\href{https://medium.com/flutter-community/the-software-engineering-approach-in-cross-platform-programming-with-flutter-part-1-efcdc8a8fc26}
+{\faMedium}
+\,\SubBulletSymbol\,
+\href{https://github.com/aliyazdi75/gallery/releases}
+{\faAndroid}
+\,\SubBulletSymbol\,
+\href{https://aliyazdi75.github.io/gallery}
+{\faGlobe}
+\,\SubBulletSymbol\,
+\href{https://github.com/aliyazdi75/gallery}
+{\faGithub}
+}}
+\Item
+Designing and Building a micro-service architecture responsive Flutter gallery application for Computer Engineering graduates uses in any platform.
+
+\BigGap
+\BulletItem
+\textbf{The Flutter Media Notification Plugin},
+\textit{\small{Java, Flutter}}
+\hfill
+{\normalsize{
+\href{https://pub.dev/packages/flutter_media_notification}
+{\faGlobe}
+\,\SubBulletSymbol\,
+\href{https://github.com/aliyazdi75/flutter_media_notification}
+{\faGithub}
+}}
+\Item
+Designing and Building a Flutter Plugin helps developers show their media notification and control streaming media beyond the Flutter application.
+
+\BigGap
+\BulletItem
+\textbf{The Flutter Chat Application},
+\textit{\small{Flutter, SignalR, WebRTC}}
+\hfill
+{\normalsize{
+\href{https://github.com/aliyazdi75/flutter_chat}
+{\faGithub}
+}}
+\Item
+Designing and Implementing a full-featured (simple message, multimedia message, voice, video) flutter chat application by SignalR and WebRTC.
+
+%%%%%%%%%%%%
+%% Academic Projects %%
+%%%%%%%%%%%%
+
+\Section
+{Academic Projects}
+{Academic Projects}
+{PDF:AcademicProjects}
+
+% \begin{multicols}{2}
+% \begin{itemize}[leftmargin=*]
+
+\BulletItem
+\textbf{NUMEX Interpreter},
+\textit{\small{Racket}}
+\hfill
+{\normalsize{
+\href{https://github.com/aliyazdi75/NUMEX-Interpreter}
+{\faGithub}
+}}
+\Item
+Designing a simple interpreter NUMEX programming language
+with Racket for Programming Languages course.
+
+\BigGap
+\BulletItem
+\textbf{Planet vs Zombies Game Application},
+\textit{\small{Java}}
+\hfill
+{\normalsize{
+\href{https://github.com/aliyazdi75/Planet\_vs\_Zombies}
+{\faGithub}
+}}
+\Item
+A 2d game similar to Plant vs Zombies game using java
+object oriented programming for Advanced Computer Programmings course.
+
+\BigGap
+\BulletItem
+\textbf{Digital Watch Microcontroller},
+\textit{\small{C}}
+\hfill
+{\normalsize{
+\href{https://github.com/aliyazdi75/Digital-Watch-with-LCD}
+{\faGithub}
+}}
+\Item
+A digital watch with LCD and alarm using microcontroller
+ATMEGA16 for Microprocessor and Assembly Language course.
+
+% \columnbreak
+
+
+\BigGap
+\BulletItem
+\textbf{Finite State Machine Search Engine},
+\textit{\small{Java}}
+\hfill
+{\normalsize{
+\href{https://github.com/aliyazdi75/Finite-State-Machine}
+{\faGithub}
+}}
+\Item
+Creating four types of data structure and searching using
+AVL-tree, balance-TST, trie-tree and hash Data Structure and Algorithms course.
+
+\BigGap
+\BulletItem
+\textbf{UDP to TCP Proxy},
+\textit{\small{Python}}
+\hfill
+{\normalsize{
+\href{https://github.com/aliyazdi75/DNS-UDP-TCP-Proxy}
+{\faGithub}
+}}
+\Item
+A python proxy that receives HTTP packets on UDP
+then sends them on TCP with DNS server for Computer Networks course.
+
+\BigGap
+\BulletItem
+\textbf{Security Course},
+\textit{\small{Racket}}
+\hfill
+{\normalsize{
+\href{https://github.com/aliyazdi75/My-Security-Course}
+{\faGithub}
+}}
+\Item
+Working on encryption with MD5, SHA256, DES,
+working with cryptool software nmap
+and using ms08\_067 exploitand for Information Security course.
+
+% \end{itemize}
+% \end{multicols}
+
+%%%%%%%%%%%%%%%%%%
+%% PAGE BREAK %%
+%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEACHING EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Teaching Experience}
+{Teaching Experience}
+{PDF:TeachingExperience}
+
+\Entry
+\textbf{Data Structures and Algorithms},
+Amirkabir University of Technology,
+\hfill
+\textsl{\small{\DatestampYM{2017}{09}\,--\,\DatestampYM{2018}{03}}}
+
+\Gap
+\BulletItem
+Undergraduate Teaching Assistant
+\begin{Detail}
+\SubBulletItem
+Supervisor:
+\href{https://aut.ac.ir/cv/2123/Mehdi-Dehghan-Takht-Fooladi?slc_lang=en&&cv=2123&mod=scv}
+{Prof.~Mehdi~Dehghan}
+\,\SubBulletSymbol\,
+\href{mailto:dehghan@aut.ac.ir}
+{dehghan@aut.ac.ir}
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\Entry
+\textbf{Artificial Intelligent and Robotics Lab},
+Amirkabir University of Technology,
+\hfill
+\textsl{\small{\DatestampYM{2019}{10}\,--\,\DatestampYM{2020}{10}}}
+
+\Gap
+\BulletItem
+Undergraduate Research Student
+\begin{Detail}
+\SubBulletItem
+Project:
+Designing and Implementing Location Based Social Network Recommendation System
+\SubBulletItem
+Supervisor:
+Prof.~Mohammad~Rahmati
+\SubBulletItem
+Focus: Artificial Intelligence, Software Engineering, Data Analytics
+\end{Detail}
+
+%%%%%%%%%%%%%%%
+%% RESEARCH INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Research Interests}
+{Research Interests}
+{PDF:ResearchInterests}
+
+\BulletItem
+Artificial Intelligence
+
+\Gap
+\BulletItem
+Machine Learning
+
+\Gap
+\BulletItem
+Software Engineering
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+English: Fluent, working proficiency (Studying IELTS)
+
+\Gap
+\BulletItem
+Persian: Native language
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{References}
+{References}
+{PDF:References}
+
+\BulletItem
+\href{https://www.linkedin.com/in/srasoulzadeh}
+{\textbf{Ph.D. Student Shervin Rasoulzadeh}}
+\newline
+Former Colleague at Tarafdari,
+\newline
+Ph.D. Student and Research Assistant, Technische Universität Wien,
+\newline
+Faculty of Informatics, Technische Universität Wien, Karlsplatz 13, 1040 Vienna, Austria
+\newline
+\href{mailto:srasoulzadeh@cg.tuwien.ac.at}
+{srasoulzadeh@cg.tuwien.ac.at}
+
+\BigGap
+\BulletItem
+\href{https://aut.ac.ir/cv/2416/Mohammad-Rahmati?slc_lang=en&&cv=2416&mod=scv}
+{\textbf{Professor Mohammad Rahmati}}
+\newline
+Former Advisor and Supervisor at Amirkabir University of Technology,
+\newline
+Professor of Department of Computer Engineering, Amirkabir University of Technology,
+\newline
+Dept. Computer Engineering Amirkabir University, Hafez Ave., Tehran, Iran
+\newline
+\href{mailto:rahmatiaut.ac.ir}
+{rahmati@aut.ac.ir}
+% \,\SubBulletSymbol\,
+% +98\,(21)\,645-42741
+
+%%%%%%%%%%%%%%%
+%% HOBBIES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{HOBBIES}
+{HOBBIES}
+{PDF:Hobbies}
+
+\BulletItem
+Hiking \& Travelling.
+
+\Gap
+\BulletItem
+Listening Music \& Playing a Persian Instrument called 3Tar.
+
+\Gap
+\BulletItem
+Playing Football \& Volleyball.
+
+\Gap
+\BulletItem
+Playing Chess \& Video Games.
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+{\UseNoteFont
+\hfill
+[\textit{\CVNote}]
+\SubBulletSymbol\,
+[Clone me on
+\href{https://github.com/aliyazdi75/Resume}
+{\faGithub}]}
+
+\end{Body}
+\end{document}
